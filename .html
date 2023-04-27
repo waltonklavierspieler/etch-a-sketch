@@ -1,62 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Etch-A-Sketch</title>
+		<meta charset="utf-8">
+		<title>PRACTICE</title>
 </head>
 <style>
-  button {
-			display: flex;
-			width: 150px;
-			height: 75px;
-			align-items: center;
-			justify-content: center;
-			font-size: 18px;
-			font-weight: bold;
-		}
 
-		.buttonDiv {
-			display: flex;
-			justify-content: space-between;
-		}
+	button {
+		display: flex;
+		width: 150px;
+		height: 75px;
+		align-items: center;
+		justify-content: center;
+		font-size: 18px;
+		font-weight: bold;
+	}
 
-		#colorButton {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-		}
+	.buttonDiv {
+		display: flex;
+		justify-content: space-between;
+	}
 
-		.container {
-			display: flex;
-			width: 960px;
-			height: 960px;
-			border: 1px red;
-		}
+	.colorDiv {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
 
-		.column {
-			border: 0.5px solid black;
-			display: flex;
-			flex-direction: column;
-			flex-grow: 1;
-		}
+	h1 {
+		display: flex;
+		justify-content: center;
+		width: 960px;
+		flex-wrap: wrap;
+	}
 
-		.row {
-			border: 0.5px solid black;
-			display: flex;
-			flex-direction: row;
-			flex-grow: 1;
-			background: white;
-		}
+	.container {
+		display: flex;
+		width: 960px;
+		height: 960px;
+	}
+
+	.column {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+	}
+
+	.row {
+		display: flex;
+		flex-direction: row;
+		flex-grow: 1;
+		background: white;
+	}
+
 </style>
 <body>
-  <div class='buttonDiv'>
-    <button id='createGrid'>Create a Grid</button>
-    <button id='clearBoard'>Empty the Grid</button>
-    <button id='colorButton'>Select a Color</button>
-    <button id='shake'>SHAKE to clear</button>
-  </div>
-  <div class='container'>
-  </div>
+	<div class='buttonDiv'>
+		<button id='createGrid'>Create a Grid</button>
+		<button id='clearBoard'>Empty the Grid</button>
+		<button id='shake'>SHAKE to clear</button>
+	</div>
+	<div class='colors'>
+		<h1>Pick a color</h1>
+			<div class='colorDiv'></div>
+	</div>
+	<div class='container'>
+	</div>
 </body>
 <script src="etch-a-sketch.js"> </script>
 </html>
